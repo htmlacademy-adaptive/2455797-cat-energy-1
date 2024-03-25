@@ -7,40 +7,42 @@
 </head>
 <body class="page__form">
   <header class="main__header">
-    <!-- Logo -->
-    <a class="header__logo logo-mobile" href="index.html">
-      <img class="header-logo__logo-mobile" src="/source/img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
-      <!-- <img class="header-logo__logo-tablet" src="/source/img/logo-tablet.svg" alt="Логотип Cat Energy" width="60" height="50">
-      <img class="header-logo__logo-desktop" src="/source/img/logo-desktop.svg" alt="Логотип Cat Energy" width="70" height="59"> -->
-    </a>
-    <a class="header__logo-text" href="index.html">
-      <img src="/source/img/logo-text.svg" alt="Cat Energy">
-    </a>
-    <!-- Navigation -->
-    <nav class="header__main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper main-nav__wrapper--close">
-        <ul class="main-nav__-list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="header-container">
+      <!-- Logo -->
+      <a class="header__logo logo-mobile" href="index.html">
+        <img class="header-logo__logo-mobile" src="/source/img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
+        <!-- <img class="header-logo__logo-tablet" src="/source/img/logo-tablet.svg" alt="Логотип Cat Energy" width="60" height="50">
+        <img class="header-logo__logo-desktop" src="/source/img/logo-desktop.svg" alt="Логотип Cat Energy" width="70" height="59"> -->
+      </a>
+      <a class="header__logo-text" href="index.html">
+        <img src="/source/img/logo-text.svg" alt="Cat Energy" width="101" height="18">
+      </a>
+      <!-- Navigation -->
+      <nav class="header__main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper main-nav__wrapper--close">
+          <ul class="main-nav__-list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-container">
@@ -156,41 +158,44 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button">отправить заявку</button>
+        <button class="form__button button" type="submit">отправить заявку</button>
         <p class="form__footnote">* — Обязательные поля</p>
       </form>
+    </section>
+    <!-- Construction -->
+    <section class="construction">
+      <div class="construction__container">
+        <h2 class="construction__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="construction__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
     </section>
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__construction construction-form-page">
-      <h2 class="construction__title">приглашаем к сотрудничеству дилеров!</h2>
-      <p class="construction__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="main-footer__container">
+      <img class="main-footer__logo" src="../source/img/logo-text.svg" alt="Cat Energy" width="128" height="24">
+        <ul class="main-footer__social-list">
+          <li class="social__social-item">
+            <a class="social__social-link" href="https://vk.com/htmlacademy">
+              <img src="../source/img/vkontakte.svg" alt="Вконтакте" width="28" height="22">
+            </a>
+          </li>
+          <li class="social__social-item">
+            <a class="social__social-link" href="https://vk.com/htmlacademy">
+              <img src="../source/img/youtube.svg" alt="Youtube" width="28" height="22">
+            </a>
+          </li>
+          <li class="social__social-item">
+            <a class="social__social-link" href="https://vk.com/htmlacademy">
+              <img src="../source/img/telegram.svg" alt="Telegram" width="28" height="22">
+            </a>
+          </li>
+        </ul>
+      <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+        <img class="academy-logo" src="../source/img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+      </a>
     </div>
-    <img class="main-footer__logo" src="../source/img/logo-text.svg" alt="Cat Energy">
-    <div class="main-footer__social">
-      <ul class="social__social-list">
-        <li class="social__social-item">
-          <a class="social__social-link" href="https://vk.com/htmlacademy">
-            <img src="../source/img/vkontakte.svg" alt="Вконтакте">
-          </a>
-        </li>
-        <li class="social__social-item">
-          <a class="social__social-link" href="https://vk.com/htmlacademy">
-            <img src="../source/img/youtube.svg" alt="Youtube">
-          </a>
-        </li>
-        <li class="social__social-item">
-          <a class="social__social-link" href="https://vk.com/htmlacademy">
-            <img src="../source/img/telegram.svg" alt="Telegram">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
-      HTML Academy
-      <img class="academy-logo" src="../source/img/htmlacademy.svg" alt="HTML Academy">
-    </a>
   </footer>
 </body>
 </html>
