@@ -1,5 +1,4 @@
 .additional-products {
-
   .additional-products__title {
     font-size: 24px;
     line-height: 24px;
@@ -13,7 +12,7 @@
 }
 
 .additional-products-item__title {
-  font-family: "Oswald";
+  font-family: "Oswald" sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
@@ -28,7 +27,7 @@
 
 .additional-products__term,
 .additional-products__definition {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -39,7 +38,7 @@
 }
 
 .gift-container {
-  background-image: url(../img/background-catalog.jpg);
+  background-image: url("../img/background-catalog.jpg");
   background-repeat: no-repeat;
   min-height: 290px;
 }
@@ -50,7 +49,7 @@
 }
 
 .gift__description {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;

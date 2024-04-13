@@ -1,6 +1,6 @@
 .main__header {
   background-color: #ffffff;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   max-width: 320px;
 
   .container {
@@ -35,8 +35,7 @@
 
 .main-nav__item {
   text-align: center;
-  padding-top: 22px;
-  padding: 24px;
+  padding: 22px 24px 24px;
   border-top: solid 2px #e6e6e6;
 }
 

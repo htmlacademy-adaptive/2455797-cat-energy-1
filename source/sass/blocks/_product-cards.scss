@@ -1,5 +1,5 @@
 .product-cards {
-    border-top: 2px solid #d9d9d9;
+  border-top: 2px solid #d9d9d9;
 }
 
 .product-cards__cards-list {
@@ -10,11 +10,10 @@
 
 .product-cards__title {
   line-height: 36px;
-
 }
 
 .product-cards__cards-item {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
@@ -23,7 +22,7 @@
 .description-list__term,
 .description-list__definition,
 .cards-item__card-description {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #444444;

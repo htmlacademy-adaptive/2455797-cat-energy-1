@@ -37,7 +37,7 @@
 }
 
 .form__description {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   color: #000000;
   text-transform: uppercase;
@@ -45,9 +45,8 @@
 
 .field-container__description,
 .field-container__radio-description,
-.field-container__description,
 .field-container__check-description {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -83,7 +82,7 @@
 }
 
 .form__footnote {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

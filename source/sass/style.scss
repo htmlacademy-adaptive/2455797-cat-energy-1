@@ -11,8 +11,6 @@
 @import "../sass/blocks/additional-products";
 @import "../sass/blocks/program-select";
 
-
-
 body {
   margin: 0;
 }
@@ -34,14 +32,14 @@ body {
 }
 
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 36px;
   color: #000000;
   margin: 0;
 }
 
 .description {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   color: #444444;
   margin: 0;
@@ -52,7 +50,7 @@ body {
   // min-width: 280px;
   background-color: #68b738;
   text-decoration: none;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
