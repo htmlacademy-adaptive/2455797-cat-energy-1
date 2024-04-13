@@ -1,5 +1,61 @@
 // Начните писать стили здесь
+@import "../sass/blocks/fonts";
+@import "../sass/blocks/header";
+@import "../sass/blocks/promo";
+@import "../sass/blocks/advantages";
+@import "../sass/blocks/how-it-works";
+@import "../sass/blocks/example";
+@import "../sass/blocks/construction";
+@import "../sass/blocks/footer";
+
+
+
 body {
   margin: 0;
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Oswald";
+  font-size: 36px;
+  color: #000000;
+  margin: 0;
+}
+
+.description {
+  font-family: "Lato";
+  font-size: 14px;
+  color: #444444;
+  margin: 0;
+}
+
+.button {
+  display: block;
+  // min-width: 280px;
+  background-color: #68b738;
+  text-decoration: none;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 63px;
+  margin: 0 auto;
+  border: none;
 }

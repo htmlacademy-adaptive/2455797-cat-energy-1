@@ -1,0 +1,49 @@
+.main__header {
+  background-color: #ffffff;
+  font-family: "Oswald";
+  max-width: 320px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__logo-text {
+  margin-top: 10px;
+}
+
+.main-nav__wrapper--close {
+  display: none;
+}
+
+.main-nav__wrapper {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 43px;
+  width: 320px;
+  background-color: #ffffff;
+}
+
+
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  text-align: center;
+  padding-top: 22px;
+  padding: 24px;
+  border-top: solid 2px #e6e6e6;
+}
+
+
+.main-nav__link {
+  color: #000000;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

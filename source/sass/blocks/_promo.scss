@@ -1,0 +1,33 @@
+.promo {
+  max-width: 320px;
+  background-image: url(../img/index-background.jpg);
+  background-repeat: no-repeat;
+  font-family: "Oswald";
+  margin-bottom: 20px;
+
+  .container {
+    min-height: 302px;
+    min-width: 320px;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  .container-2 {
+    max-width: 280px;
+    margin: -145px auto 0;
+  }
+
+  .promo__title {
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+    padding: 27px 0 25px;
+  }
+
+  .promo__slogan {
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+  }
+}
