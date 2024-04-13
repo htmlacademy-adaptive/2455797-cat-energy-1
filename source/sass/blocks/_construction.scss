@@ -1,8 +1,15 @@
 .construction {
+  background-color: #f2f2f2;
   .container {
     display: flex;
-    margin: 26px auto;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
+}
+
+.construction-white {
+  background-color: #ffffff;
 }
 
 .construction__title {
@@ -12,4 +19,5 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  font-weight: normal;
 }

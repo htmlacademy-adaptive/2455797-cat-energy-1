@@ -1,0 +1,91 @@
+.form__feild-list,
+.form-target__field-list,
+.form-owner__field-list,
+.form-extra__field-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__feild-list {
+  margin-top: 39px;
+}
+
+.form-target__field-list {
+  margin-top: 46px;
+}
+
+.form-owner__field-list {
+  margin-top: 35px;
+}
+
+.form-extra__field-list {
+  margin-top: 34px;
+}
+
+.form__field-item,
+.form-target__field-item,
+.form-owner__field-item,
+.form-extra__field-item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.form-extra__field-item:last-child {
+  margin-bottom: 34px;
+}
+
+.form__description {
+  font-family: "Oswald";
+  font-size: 14px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.field-container__description,
+.field-container__radio-description,
+.field-container__description,
+.field-container__check-description {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form-owner {
+  .form-owner__title {
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 24px;
+  }
+}
+
+.form-comment {
+  .form-comment__title {
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 24px;
+  }
+}
+
+.form-comment__comment {
+  margin-top: 38px;
+}
+
+.form-extra {
+  .form-extra__title {
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 24px;
+  }
+}
+
+.form__footnote {
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding-bottom: 32px;
+}
