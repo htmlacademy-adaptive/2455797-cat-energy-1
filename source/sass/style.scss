@@ -1,6 +1,10 @@
 // Начните писать стили здесь
 @import "../sass/blocks/fonts";
+@import "../sass/blocks/tools";
+@import "../sass/blocks/button";
+@import "../sass/blocks/container";
 @import "../sass/blocks/header";
+@import "../sass/blocks/main-nav";
 @import "../sass/blocks/promo";
 @import "../sass/blocks/advantages";
 @import "../sass/blocks/how-it-works";
@@ -10,58 +14,3 @@
 @import "../sass/blocks/product-cards";
 @import "../sass/blocks/additional-products";
 @import "../sass/blocks/program-select";
-
-body {
-  margin: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  max-width: 280px;
-  margin: 0 auto;
-}
-
-.title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  color: #000000;
-  margin: 0;
-}
-
-.description {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  color: #444444;
-  margin: 0;
-}
-
-.button {
-  display: block;
-  // min-width: 280px;
-  background-color: #68b738;
-  text-decoration: none;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 10px 63px;
-  margin: 0 auto;
-  border: none;
-}
-
-.button-secondary {
-  background-color: #f2f2f2;
-  color: #444444;
-}

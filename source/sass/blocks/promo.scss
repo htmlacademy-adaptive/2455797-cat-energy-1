@@ -1,20 +1,11 @@
 .promo {
-  max-width: 320px;
-  background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   font-family: "Oswald", sans-serif;
   margin-bottom: 20px;
-
-  .container {
-    min-height: 302px;
-    min-width: 320px;
-    background-color: rgba(104, 183, 56, 0.85);
-  }
-
-  .container-2 {
-    max-width: 280px;
-    margin: -145px auto 0;
-  }
+  background-image:
+    linear-gradient(to bottom, rgba(98, 166, 59, 0.85) 302px, transparent 320px),
+    url("../img/index-background.jpg");
+  background-position: top;
 
   .promo__title {
     line-height: 36px;
