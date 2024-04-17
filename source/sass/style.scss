@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+// Шрифты
+@import "../sass/base/fonts";
+
+// Миксины
+@import "../sass/base/mixins";
+
+// Базовые стили
+@import "../sass/base/tools";
+@import "../sass/base/container";
+
+// Кнопки
+@import "../sass/base/button";
+
+// Блоки
+@import "../sass/blocks/header";
+@import "../sass/blocks/main-nav";
+@import "../sass/blocks/promo";
+@import "../sass/blocks/advantages";
+@import "../sass/blocks/how-it-works";
+@import "../sass/blocks/example";
+@import "../sass/blocks/construction";
+@import "../sass/blocks/footer";
+@import "../sass/blocks/product-cards";
+@import "../sass/blocks/additional-products";
+@import "../sass/blocks/program-select";

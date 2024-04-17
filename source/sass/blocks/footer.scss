@@ -1,0 +1,36 @@
+.main-footer {
+  background-color: #f2f2f2;
+
+  .container {
+    padding-top: 40px;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.main-footer__social-list {
+  @include list-reset;
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+.main-footer__developer-link {
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 280px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+  padding: 7px 0;
+}
+
+.developer-logo {
+  margin-left: 135px;
+}

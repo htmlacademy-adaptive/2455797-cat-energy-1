@@ -1,0 +1,29 @@
+.main-nav__wrapper--close {
+  display: none;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  left: 50%;
+  top: 42px;
+  width: 320px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  text-align: center;
+  padding: 22px 24px 24px;
+  border-top: solid 2px #e6e6e6;
+}
+
+.main-nav__link {
+  color: #000000;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

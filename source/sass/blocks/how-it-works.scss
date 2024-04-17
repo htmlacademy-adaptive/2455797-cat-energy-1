@@ -1,0 +1,19 @@
+.how-it-works__title {
+  line-height: 40px;
+}
+
+.how-it-works__specification-list {
+  @include list-reset;
+  margin: 40px 0 49px 0;
+}
+
+.specification-list__item {
+  line-height: 18px;
+  width: 200px;
+  margin-left: 80px;
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
