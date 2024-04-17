@@ -3,9 +3,8 @@
 }
 
 .how-it-works__specification-list {
-  list-style-type: none;
+  @include list-reset;
   margin: 40px 0 49px 0;
-  padding: 0;
 }
 
 .specification-list__item {

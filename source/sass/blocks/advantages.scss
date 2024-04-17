@@ -1,8 +1,5 @@
 .advantages-cards__list {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  gap: 20px;
+  @include list-reset;
 }
 
 .advantages-cards__item {
@@ -12,10 +9,8 @@
   margin-bottom: 20px;
 
   .advantage-cards-item__title {
-    font-family: "Oswald", sans-serif;
     font-size: 24px;
     line-height: 37px;
-    color: #000000;
     text-transform: uppercase;
     font-weight: normal;
     margin: 0;
@@ -30,7 +25,6 @@
 
   .advantage-cards-item__link {
     text-decoration: none;
-    font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 16px;
     color: #000000;

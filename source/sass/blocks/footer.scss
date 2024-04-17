@@ -12,10 +12,9 @@
 }
 
 .main-footer__social-list {
-  list-style-type: none;
-  max-width: 132px;
+  @include list-reset;
+  width: max-content;
   margin: 0 auto;
-  padding: 0;
   display: flex;
   gap: 24px;
 }

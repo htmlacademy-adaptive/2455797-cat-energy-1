@@ -1,8 +1,17 @@
-// Начните писать стили здесь
-@import "../sass/blocks/fonts";
-@import "../sass/blocks/tools";
-@import "../sass/blocks/button";
-@import "../sass/blocks/container";
+// Шрифты
+@import "../sass/base/fonts";
+
+// Миксины
+@import "../sass/base/mixins";
+
+// Базовые стили
+@import "../sass/base/tools";
+@import "../sass/base/container";
+
+// Кнопки
+@import "../sass/base/button";
+
+// Блоки
 @import "../sass/blocks/header";
 @import "../sass/blocks/main-nav";
 @import "../sass/blocks/promo";

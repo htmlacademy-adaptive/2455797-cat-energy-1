@@ -2,9 +2,7 @@
 .form-target__field-list,
 .form-owner__field-list,
 .form-extra__field-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
 
 .form__feild-list {
@@ -15,12 +13,9 @@
   margin-top: 46px;
 }
 
-.form-owner__field-list {
-  margin-top: 35px;
-}
-
+.form-owner__field-list,
 .form-extra__field-list {
-  margin-top: 34px;
+  margin-top: 35px;
 }
 
 .form__field-item,
@@ -37,7 +32,6 @@
 }
 
 .form__description {
-  font-family: "Oswald", sans-serif;
   font-size: 14px;
   color: #000000;
   text-transform: uppercase;
@@ -46,7 +40,6 @@
 .field-container__description,
 .field-container__radio-description,
 .field-container__check-description {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
