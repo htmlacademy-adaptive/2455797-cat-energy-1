@@ -5,6 +5,13 @@
 .how-it-works__specification-list {
   @include list-reset;
   margin: 40px 0 49px 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
 }
 
 .specification-list__item {
@@ -15,5 +22,10 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

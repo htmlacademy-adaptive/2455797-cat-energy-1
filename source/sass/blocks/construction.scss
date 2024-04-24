@@ -6,6 +6,10 @@
     margin: 0 auto;
     padding-top: 26px;
     padding-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      gap: 308px;
+    }
   }
 }
 
@@ -20,4 +24,17 @@
   color: #111111;
   text-transform: uppercase;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    box-sizing: border-box;
+    width: 100px;
+  }
+}
+
+.construction__contacts {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 300px;
+  }
 }

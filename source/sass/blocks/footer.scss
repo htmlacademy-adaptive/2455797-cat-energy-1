@@ -3,12 +3,21 @@
 
   .container {
     padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
 .main-footer__logo {
   display: block;
   margin: 0 auto 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__social-list {
@@ -29,8 +38,17 @@
   color: #444444;
   text-decoration: none;
   padding: 7px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: auto;
+  }
 }
 
 .developer-logo {
   margin-left: 135px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
 }

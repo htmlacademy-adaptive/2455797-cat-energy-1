@@ -1,5 +1,10 @@
 .product-cards {
   border-top: 2px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    margin-top: 65px;
+  }
 }
 
 .product-cards__cards-list {
@@ -11,6 +16,12 @@
   font-size: 16px;
   line-height: 20px;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }
 
 
@@ -22,11 +33,32 @@
     "product title"
     "product description"
     "button button";
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: repeat(2, 125px);
+      grid-template-areas:
+        "product product"
+        "product product"
+        "title title"
+        "title title"
+        "description description"
+        "description description"
+        "button button";
+    }
 }
 
 .cards-item__card-title {
   grid-area: title;
   margin: 0;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 41px;
+  }
 }
 
 .cards-item__card-image {
@@ -36,20 +68,30 @@
 
 .cards-item__description-list {
   grid-area: description;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .cards-item__button {
   grid-area: button;
-  width: 280px;
-}
+  width: 250px;
 
-.product-cards__title {
-  line-height: 36px;
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .description-list__container-item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    :not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .description-list__term,
@@ -59,4 +101,25 @@
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+}
+
+.card-more {
+  .cards-item__card-title {
+    @media (min-width: $tablet-width) {
+      margin-top: 160px;
+    }
+  }
+
+  .cards-item__card-description {
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      margin-top: 23px;
+    }
+  }
+
+  .button--secondary {
+    @media (min-width: $tablet-width) {
+      margin-top: 82px;
+    }
+  }
 }

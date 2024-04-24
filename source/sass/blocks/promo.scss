@@ -5,19 +5,46 @@
     linear-gradient(to bottom, rgba(98, 166, 59, 0.85) 303px, transparent 303px),
     url("../img/index-background.jpg");
   background-position: top;
+  color: #ffffff;
 
-  .promo__title {
-    line-height: 36px;
-    color: #ffffff;
-    text-align: center;
-    padding: 27px 0 25px;
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: #ffffff;
+    color: #000000;
   }
+}
 
-  .promo__slogan {
-    font-size: 14px;
-    line-height: 14px;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
+.promo__title {
+  text-align: center;
+  padding: 27px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    width: 416px;
+    text-align: start;
+    margin-left: 90px;
+  }
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__button {
+    width: 192px;
+    margin-left: 90px;
   }
 }

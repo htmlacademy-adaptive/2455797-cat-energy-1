@@ -10,14 +10,29 @@
   padding-top: 40px;
 }
 
-.example__stats-container {
+.stats-container {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+}
+
+.stats-block {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    gap: 167px;
+  }
 }
 
 .stats-container__stats {
   width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .stats__value {
@@ -26,6 +41,11 @@
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__stats-spending {
@@ -33,4 +53,8 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
