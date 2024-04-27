@@ -2,11 +2,41 @@
   .additional-products__title {
     font-size: 24px;
     line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-right: 40px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
   }
 }
 
 .additional-products__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+}
+
+.additional-products__item {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 407px 223px;
+    grid-template-areas:
+      "title description"
+      "button button";
+    justify-content: center;
+    padding: 26px 0 28px;
+    border: 2px solid #e6e6e6;
+    &:not(:first-child) {
+      border-top: none;
+    }
+  }
 }
 
 .additional-products-item__title {
@@ -15,11 +45,21 @@
   color: #222222;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__description-list {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    grid: description;
+  }
 }
 
 .additional-products__term,
@@ -28,21 +68,43 @@
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__button {
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+    width: 630px;
+  }
 }
 
 .gift-container {
   background-image: url("../img/background-catalog.jpg");
+
   background-repeat: no-repeat;
-  min-height: 290px;
+  height: 290px;
+
+  @media (min-width: $tablet-width) {
+    margin: 70px 0 75px;
+    background-size: 200px;
+    box-sizing: border-box;
+    height: 200px;
+  }
 }
 
 .gift-container__green {
   background-color: rgba(104, 183, 56, 0.85);
   min-height: inherit;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
 }
 
 .gift__description {
@@ -54,4 +116,12 @@
   text-align: center;
   display: block;
   padding: 186px 0 43px 58px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 700px;
+    padding: 71px 125px 69px 421px;
+    text-align: left;
+    margin: 0;
+  }
 }

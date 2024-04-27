@@ -4,27 +4,37 @@
   .container {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
+
+.header__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-content: baseline;
+  }
 }
 
 .header__logo-text {
   margin-top: 10px;
   margin-left: 56px;
-}
 
-@media (min-width: $tablet-width) {
-  .main__header {
-    .header__logo-wrapper {
-      display: flex;
-      align-content: baseline;
-    }
-
-    .header__logo-text {
-      margin-left: 13px;
-    }
-
-    .header__main-nav {
-      margin-left: 94px;
-      margin-top: 7px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
   }
 }
+
+.header__main-nav {
+  @media (min-width: $tablet-width) {
+    margin-left: 94px;
+    margin-top: 7px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-left: 543px;
+  }
+}
+
