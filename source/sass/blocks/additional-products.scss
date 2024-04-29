@@ -13,6 +13,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 76px;
+  }
 }
 
 .additional-products__list {

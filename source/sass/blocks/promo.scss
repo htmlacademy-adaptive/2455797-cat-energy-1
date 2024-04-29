@@ -42,9 +42,23 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .promo__button {
+
+.promo__button {
+  @media (min-width: $tablet-width) {
     width: 192px;
     margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-top: 52px;
+  }
+}
+
+.promo__product {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 143px;
+    right: 606px;
   }
 }

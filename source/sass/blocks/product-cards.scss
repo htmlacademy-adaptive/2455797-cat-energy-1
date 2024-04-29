@@ -5,6 +5,10 @@
     border-top: none;
     margin-top: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+  }
 }
 
 .product-cards__cards-list {
@@ -21,6 +25,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin-top: 84px;
   }
 }
 
@@ -45,6 +55,12 @@
         "description description"
         "button button";
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 40px 38px;
+      width: 245px;
+      box-sizing: border-box;
+    }
 }
 
 .cards-item__card-title {
@@ -59,11 +75,15 @@
     text-align: center;
     margin-top: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .cards-item__card-image {
   grid-area: product;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .cards-item__description-list {
@@ -71,6 +91,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
@@ -80,6 +104,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    padding: 10px 53px;
+    margin: 32px 0 0 0;
   }
 }
 
@@ -104,9 +134,18 @@
 }
 
 .card-more {
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    box-sizing: border-box;
+  }
+
   .cards-item__card-title {
     @media (min-width: $tablet-width) {
       margin-top: 160px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 205px;
     }
   }
 
@@ -115,11 +154,22 @@
       text-align: center;
       margin-top: 23px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 169px;
+      margin-top: 26px;
+      margin-bottom: 0;
+    }
   }
 
   .button--secondary {
     @media (min-width: $tablet-width) {
       margin-top: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 10px 28px;
+      margin-top: 47px;
     }
   }
 }
