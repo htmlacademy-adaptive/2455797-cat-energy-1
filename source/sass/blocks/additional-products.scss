@@ -19,12 +19,23 @@
   }
 }
 
+.additional-products__container {
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
 .additional-products__list {
   @include list-reset;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 80px;
-  }
 }
 
 .additional-products__item {
@@ -41,6 +52,14 @@
       border-top: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 15px 2px;
+    align-items: baseline;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .additional-products-item__title {
@@ -55,6 +74,11 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    margin: 0;
+  }
 }
 
 .additional-products__description-list {
@@ -63,6 +87,10 @@
 
   @media (min-width: $tablet-width) {
     grid: description;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
   }
 }
 
@@ -77,6 +105,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .additional-products__button {
@@ -85,6 +117,12 @@
   @media (min-width: $tablet-width) {
     grid-area: button;
     width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    height: 40px;
+    margin-left: 40px;
   }
 }
 
@@ -95,10 +133,13 @@
   height: 290px;
 
   @media (min-width: $tablet-width) {
-    margin: 70px 0 75px;
-    background-size: 200px;
+    background-size: 100%;
     box-sizing: border-box;
-    height: 200px;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -107,7 +148,7 @@
   min-height: inherit;
 
   @media (min-width: $tablet-width) {
-    height: 200px;
+
   }
 }
 
@@ -123,9 +164,15 @@
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    width: 700px;
+    width: 100%;
     padding: 71px 125px 69px 421px;
     text-align: left;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
+    width: 100%;
+    text-align: center;
   }
 }
