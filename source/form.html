@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="js/script.js" as="script">
   <title>Cat Energy. Подбор программы</title>
 </head>
 <body class="page__form">
@@ -22,6 +23,7 @@
       <nav class="header__main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__button-image" xmlns="http://www.w3.org/2000/svg" width="24" height="18" fill="none" viewBox="0 0 24 18"><path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/></svg>
         </button>
         <div class="main-nav__wrapper main-nav__wrapper--close">
           <ul class="main-nav__list">
@@ -51,10 +53,10 @@
     <section class="program-select">
       <div class="container">
         <form class="program-select__form" action="https://echo.htmlacademy.ru/" method="post">
-          <!-- Анкета -->
-          <div class="form">
-            <legend class="form__title title">Подбор программы</legend>
-            <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <legend class="form__title title">Подбор программы</legend>
+          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="form__main-form-container">
+            <!-- Анкета -->
             <ul class="form__feild-list">
               <li class="form__field-item">
                 <label class="form__field-container">
@@ -65,20 +67,17 @@
               <li class="form__field-item">
                 <label class="form__field-container">
                   <span class="field-container__description">Вес (кг):*</span>
-                  <input class="field-container__input" type="number" placeholder="7" name="weight">
+                  <input class="field-container__input" type="text" placeholder="7" name="weight">
                 </label>
               </li>
               <li class="form__field-item">
                 <label class="form__field-container">
                   <span class="field-container__description">Возраст (лет):</span>
-                  <input class="field-container__input" type="number" placeholder="7" name="age">
+                  <input class="field-container__input" type="text" placeholder="7" name="age">
                 </label>
               </li>
             </ul>
-          </div>
-          <!-- Choose target -->
-          <div class="form form-target">
-            <legend class="visually-hidden">Выбрать цель</legend>
+            <!-- Choose target -->
             <ul class="form-target__field-list">
               <li class="form-target__field-item">
                 <label class="form-target__field-container">
@@ -108,13 +107,13 @@
             <legend class="form-owner__title title">Контактные данные (владельца кота)</legend>
             <ul class="form-owner__field-list">
               <li class="form-owner__field-item">
-                <label class="form-owner__field-container">
+                <label class="form__field-container">
                   <span class="field-container__description">E-mail:*</span>
                   <input class="field-container__input" type="email" placeholder="kuklachev@gmail.com" name="E-mail">
                 </label>
               </li>
               <li class="form-owner__field-item">
-                <label class="form-owner__field-container">
+                <label class="form__field-container">
                   <span class="field-container__description">Телефон:*</span>
                   <input class="field-container__input" type="tel" name="phone" placeholder="8 (960) 900-60-90">
                 </label>
@@ -202,5 +201,6 @@
       </a>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 </html>

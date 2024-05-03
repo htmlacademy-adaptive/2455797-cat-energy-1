@@ -1,0 +1,34 @@
+.form-extra__field-container {
+  position: relative;
+}
+
+.field-container__check-mark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+.field-container__input[type="checkbox"]:checked + .field-container__check-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background-color: $basic-green;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.field-container__input[type="checkbox"]:checked + .field-container__check-mark::after {
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  width: 14px;
+  height: 2px;
+  background-color: $basic-green;
+  content: "";
+  transform: rotate(-45deg);
+}

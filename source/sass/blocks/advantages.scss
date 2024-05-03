@@ -1,6 +1,10 @@
 .advantages-cards {
+  @media (min-width: $tablet-width) {
+    margin-top: 526px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-top: 82px;
+    margin-top: 280px;
   }
 }
 
@@ -19,8 +23,13 @@
   box-sizing: border-box;
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 0 53px 52px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 570px;
+    width: 50%;
+    padding-right: 61px;
   }
 }
 
@@ -31,6 +40,10 @@
   font-weight: normal;
   margin: 0;
   padding: 30px 0 29px 90px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     text-align: center;
@@ -43,9 +56,16 @@
   margin: 0;
   padding: 0 33px 23px 20px;
 
+  @media (min-width: $tablet-width) {
+    width: 51%;
+    padding: 0;
+    margin-top: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 100%;
   }
 }
 
@@ -59,8 +79,15 @@
   padding: 4px 47px 4px 0;
   display: block;
 
+  @media (min-width: $tablet-width) {
+    margin: 48px 0 0 0;
+    padding: 4px 57px 4px 0;
+    width: 14%;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: unset;
+    width: 25%;
   }
 }

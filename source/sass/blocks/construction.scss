@@ -24,7 +24,7 @@
 }
 
 .construction__title {
-  margin: 0;
+  margin: 0 18px 0 0;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
@@ -48,7 +48,8 @@
 .construction__contacts {
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    width: 300px;
+    width: 27%;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {

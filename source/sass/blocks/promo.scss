@@ -45,8 +45,11 @@
 
 .promo__button {
   @media (min-width: $tablet-width) {
-    width: 192px;
-    margin-left: 90px;
+    width: 23%;
+    margin: 50px 0 0 90px;
+    position: absolute;
+    z-index: 1;
+    padding: 14px 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +59,10 @@
 }
 
 .promo__product {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 143px;

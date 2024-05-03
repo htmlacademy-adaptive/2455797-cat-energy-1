@@ -1,5 +1,6 @@
 .example {
   background-color: #eaeaea;
+  margin-top: 49px;
 
   .container {
     @media (min-width: $desktop-width) {
@@ -9,6 +10,12 @@
         "description slider"
         "stats-block slider";
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    background-image:
+    linear-gradient(to bottom, #ffffff 319px, #eaeaea 262px)
   }
 }
 
@@ -26,7 +33,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: description;
-    width: 436px;
+    width: 65%;
     margin-top: 146px;
   }
 }

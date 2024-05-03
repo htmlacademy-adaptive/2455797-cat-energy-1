@@ -8,6 +8,10 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 66px 110px;
+    }
   }
 }
 
@@ -30,6 +34,7 @@
 
 .main-footer__developer-link {
   display: inline-flex;
+  align-items: center;
   box-sizing: border-box;
   width: 280px;
   font-family: "Lato", sans-serif;

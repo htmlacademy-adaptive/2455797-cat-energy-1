@@ -6,6 +6,10 @@
   }
 }
 
+.main-nav__wrapper--open {
+  display: block;
+}
+
 .main-nav__wrapper {
   position: absolute;
   left: 50%;
@@ -22,7 +26,14 @@
   }
 }
 
+.main-nav__button-image {
+  color: #000000;
+}
+
 .main-nav__toggle {
+  background-color: inherit;
+  border: none;
+
   @media (min-width: $tablet-width) {
      display: none;
   }
