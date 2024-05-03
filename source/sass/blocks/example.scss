@@ -14,8 +14,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 45px;
-    background-image:
-    linear-gradient(to bottom, #ffffff 319px, #eaeaea 262px)
+    background-image: linear-gradient(to bottom, #ffffff 319px, #eaeaea 262px);
   }
 }
 
@@ -49,7 +48,7 @@
 }
 
 .stats-block {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     gap: 167px;
   }

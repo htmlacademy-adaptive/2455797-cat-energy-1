@@ -47,6 +47,7 @@
 .additional-products__item {
   padding: 13px 0 19px;
   border-top: 2px solid #cdcdcd;
+
   &:last-child {
     border-bottom: 2px solid #cdcdcd;
   }
@@ -60,6 +61,7 @@
     justify-content: center;
     padding: 26px 0 28px;
     border: 2px solid #e6e6e6;
+
     &:not(:first-child) {
       border-top: none;
     }
@@ -159,10 +161,6 @@
 .gift-container__green {
   background-color: rgba(104, 183, 56, 0.85);
   min-height: inherit;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .gift__description {

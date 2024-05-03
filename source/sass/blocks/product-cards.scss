@@ -48,22 +48,22 @@
     "product description"
     "button button";
 
-    @media (min-width: $tablet-width) {
-      grid-template-columns: repeat(2, 125px);
-      grid-template-areas:
-        "product product"
-        "product product"
-        "title title"
-        "title title"
-        "description description"
-        "description description"
-        "button button";
-    }
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 125px);
+    grid-template-areas:
+      "product product"
+      "product product"
+      "title title"
+      "title title"
+      "description description"
+      "description description"
+      "button button";
+  }
 
-    @media (min-width: $desktop-width) {
-      max-width: 245px;
-      box-sizing: border-box;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+    box-sizing: border-box;
+  }
 }
 
 .cards-item__card-title {
