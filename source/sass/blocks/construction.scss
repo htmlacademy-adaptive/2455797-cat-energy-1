@@ -1,5 +1,6 @@
 .construction {
   background-color: $basic-gray;
+  position: relative;
 
   .container {
     display: flex;
@@ -15,12 +16,20 @@
       width: 565px;
       padding: 60px 80px;
       gap: 84px;
+      position: absolute;
+      background-color: #ffffff;
+      top: 95px;
+      left: 110px;
     }
   }
 }
 
 .construction-white {
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .construction__title {
@@ -56,4 +65,8 @@
     line-height: 20px;
     width: 157px;
   }
+}
+
+.contruction__map {
+  width: 100%;
 }

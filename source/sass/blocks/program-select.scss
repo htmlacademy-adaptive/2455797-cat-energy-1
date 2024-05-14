@@ -66,6 +66,17 @@
   width: 100%;
   padding: 14px 15px;
   white-space: nowrap;
+  border-color: #e7e7e7;
+  border-style: solid;
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: $special-dark-grey;
+    outline: none;
+  }
 }
 
 .form-target__field-list {
@@ -169,9 +180,27 @@
   margin-top: 38px;
   text-transform: uppercase;
   width: 100%;
+  border-color: #e7e7e7;
+  border-style: solid;
+  padding: 14px 15px;
+  font-size: 16px;
+  line-height: 18px;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: $special-dark-grey;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 87px auto 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {

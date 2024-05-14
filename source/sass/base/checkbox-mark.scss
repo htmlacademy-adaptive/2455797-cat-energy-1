@@ -11,6 +11,10 @@
   border: 1px solid #cdcdcd;
 }
 
+.field-container__check-mark:hover {
+  border-color: #bababa;
+}
+
 .field-container__input[type="checkbox"]:checked + .field-container__check-mark::before {
   position: absolute;
   top: 15px;

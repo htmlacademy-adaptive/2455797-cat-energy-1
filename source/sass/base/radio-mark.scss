@@ -8,8 +8,16 @@
   left: 0;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-grey;
   border-radius: 50%;
+}
+
+.field-container__radio-mark:hover {
+  border-color: #bababa;
+}
+
+.field-container__input[type="radio"]:disabled + .field-container__radio-mark {
+  opacity: 0.3;
 }
 
 .field-container__input[type="radio"]:checked + .field-container__radio-mark::before {

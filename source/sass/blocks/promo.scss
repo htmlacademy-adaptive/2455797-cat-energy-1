@@ -26,6 +26,10 @@
     text-align: start;
     margin-left: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 224px;
+  }
 }
 
 .promo__slogan {

@@ -41,6 +41,7 @@
 
 .main-nav__list {
   @include list-reset;
+  margin-top: 1px;
 
   @media (min-width: $tablet-width) {
     display: flex;
