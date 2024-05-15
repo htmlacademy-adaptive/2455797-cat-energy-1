@@ -1,6 +1,6 @@
 .button {
   display: block;
-  background-color: #68b738;
+  background-color: $basic-green;
   text-decoration: none;
   font-size: 16px;
   line-height: 20px;
@@ -12,7 +12,24 @@
   border: none;
 }
 
+.button:hover {
+  background-color: $basic-green-2;
+  cursor: pointer;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--secondary {
-  background-color: #f2f2f2;
-  color: #444444;
+  background-color: $basic-gray;
+  color: $special-dark-grey;
+}
+
+.button--secondary:hover {
+  background-color: $special-grey-2;
+}
+
+.button--secondary:active {
+  color: rgba($color: $special-dark-grey, $alpha: 0.8);
 }

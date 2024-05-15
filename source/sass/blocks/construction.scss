@@ -1,23 +1,72 @@
 .construction {
-  background-color: #f2f2f2;
+  background-color: $basic-gray;
+  position: relative;
 
   .container {
     display: flex;
     margin: 0 auto;
     padding-top: 26px;
     padding-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      gap: 308px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 565px;
+      padding: 60px 80px;
+      gap: 84px;
+      position: absolute;
+      background-color: #ffffff;
+      top: 95px;
+      left: 110px;
+    }
   }
 }
 
 .construction-white {
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .construction__title {
-  margin: 0;
+  margin: 0 18px 0 0;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    box-sizing: border-box;
+    width: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
+}
+
+.construction__contacts {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 27%;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 20px;
+    width: 157px;
+  }
+}
+
+.contruction__map {
+  width: 100%;
 }

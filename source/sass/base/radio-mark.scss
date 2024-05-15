@@ -1,0 +1,32 @@
+.form-target__field-container {
+  position: relative;
+}
+
+.field-container__radio-mark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey;
+  border-radius: 50%;
+}
+
+.field-container__radio-mark:hover {
+  border-color: #bababa;
+}
+
+.field-container__input[type="radio"]:disabled + .field-container__radio-mark {
+  opacity: 0.3;
+}
+
+.field-container__input[type="radio"]:checked + .field-container__radio-mark::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  border-radius: 50%;
+}

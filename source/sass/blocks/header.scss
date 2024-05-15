@@ -4,9 +4,34 @@
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.header__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-content: baseline;
   }
 }
 
 .header__logo-text {
   margin-top: 10px;
+  margin-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
+}
+
+.header__main-nav {
+  @media (min-width: $tablet-width) {
+    margin-left: 94px;
+    margin-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 543px;
+  }
 }

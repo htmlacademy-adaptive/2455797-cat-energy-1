@@ -1,23 +1,71 @@
 .example {
   background-color: #eaeaea;
+  margin-top: 49px;
+
+  .container {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-areas:
+        "title slider"
+        "description slider"
+        "stats-block slider";
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    background-image: linear-gradient(to bottom, #ffffff 319px, #eaeaea 262px);
+  }
 }
 
 .example__title {
-  padding-top: 25px;
+  margin-top: 25px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: title;
+    margin: 0;
+  }
 }
 
 .example__description {
-  padding-top: 40px;
+  margin-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: description;
+    width: 65%;
+    margin-top: 146px;
+  }
 }
 
-.example__stats-container {
+.stats-container {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+}
+
+.stats-block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 167px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: stats-block;
+    display: block;
+    width: 436px;
+  }
 }
 
 .stats-container__stats {
   width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .stats__value {
@@ -26,6 +74,11 @@
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__stats-spending {
@@ -33,4 +86,20 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.example__slider {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    grid-area: slider;
+  }
+}
+
+.example-slider__right-pic {
+  position: absolute;
 }

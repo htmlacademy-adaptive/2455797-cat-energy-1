@@ -4,12 +4,19 @@
 // Миксины
 @import "../sass/base/mixins";
 
+// Переменные
+@import "../sass/base/variables.scss";
+
 // Базовые стили
 @import "../sass/base/tools";
 @import "../sass/base/container";
 
 // Кнопки
 @import "../sass/base/button";
+
+// Элементы формы
+@import "../sass/base/radio-mark.scss";
+@import "../sass/base/checkbox-mark.scss";
 
 // Блоки
 @import "../sass/blocks/header";
